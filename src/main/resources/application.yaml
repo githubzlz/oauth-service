@@ -1,0 +1,10 @@
+server:
+  port: 80
+spring:
+  application:
+    name: settings
+  datasource:
+    url: jdbc:mysql://mysql.default:3306/nacos_devtest?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: nacos
+    password: nacoss

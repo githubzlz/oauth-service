@@ -35,12 +35,6 @@
       <scope>runtime</scope>
     </dependency>
 
-    <dependency>
-      <groupId>com.zlz.gateway</groupId>
-      <artifactId>springboot-gateway-starter</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-
   </dependencies>
 
   <build>

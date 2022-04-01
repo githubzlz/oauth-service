@@ -1,6 +1,6 @@
-package com.zlz.route.common.trace;
+package com.zlz.oauth.common.trace;
 
-import com.zlz.route.common.user.User;
+import com.zlz.oauth.common.dos.user.UserDO;
 import lombok.Data;
 
 /**
@@ -12,5 +12,5 @@ public class Trace {
 
     private Long traceId;
 
-    private User user;
+    private UserDO user;
 }

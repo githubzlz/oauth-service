@@ -1,6 +1,6 @@
-package com.zlz.route.common.trace;
+package com.zlz.oauth.common.trace;
 
-import com.zlz.route.common.user.User;
+import com.zlz.oauth.common.dos.user.UserDO;
 
 /**
  * @author zhulinzhong
@@ -37,7 +37,7 @@ public class TraceContext {
      * 用户信息
      * @return
      */
-    public static User getUserInfo() {
+    public static UserDO getUserInfo() {
         Trace trace = TRACE.get();
         if (null == trace) {
             return null;
@@ -54,7 +54,7 @@ public class TraceContext {
         if (null == trace) {
             return null;
         }
-        User user = trace.getUser();
+        UserDO user = trace.getUser();
         if (null == user) {
             return null;
         }

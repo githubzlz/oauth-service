@@ -1,4 +1,4 @@
-package com.zlz.route;
+package com.zlz.oauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.zlz.route.client;
+package com.zlz.oauth.client;
 
 /**
  * @author zhulinzhong

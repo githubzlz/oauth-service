@@ -1,4 +1,4 @@
-package com.zlz.route.common;
+package com.zlz.oauth.common;
 
 /**
  * @author zhulinzhong

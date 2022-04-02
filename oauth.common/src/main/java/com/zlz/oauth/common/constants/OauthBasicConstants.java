@@ -6,5 +6,4 @@ package com.zlz.oauth.common.constants;
  */
 public interface OauthBasicConstants {
 
-    String TEST_TOKEN = "1sfscxzdf3fsdf3fgddfsgsdf";
 }

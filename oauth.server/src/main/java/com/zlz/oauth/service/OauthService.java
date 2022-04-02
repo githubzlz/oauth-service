@@ -1,6 +1,8 @@
 package com.zlz.oauth.service;
 
 import com.zlz.basic.response.ResultSet;
+import com.zlz.oauth.common.dto.TokenDTO;
+import com.zlz.oauth.common.dto.UserDTO;
 import com.zlz.oauth.common.req.AuthCheckReq;
 
 /**
@@ -15,4 +17,18 @@ public interface OauthService {
      * @return
      */
     ResultSet<String> authLogin(AuthCheckReq req);
+
+    /**
+     * 退出登录
+     * @param req
+     * @return
+     */
+    ResultSet<String> authLogout(AuthCheckReq req);
+
+    /**
+     * token认证
+     * @param token
+     * @return
+     */
+    ResultSet<UserDTO> authCheck(TokenDTO token);
 }

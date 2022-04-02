@@ -9,11 +9,15 @@ import com.zlz.oauth.common.enums.OauthBizErrorEnum;
  */
 public class OauthBizException extends BizException {
 
+    public OauthBizException(String message) {
+        super(message);
+    }
+
     public OauthBizException(OauthBizErrorEnum errorEnum, Throwable cause) {
-        super(errorEnum.getCode() + ":" + errorEnum.getDesc(), cause);
+        super(errorEnum.getCode(), errorEnum.getDesc(), cause);
     }
 
     public OauthBizException(OauthBizErrorEnum errorEnum) {
-        super(errorEnum.getCode() + ":" + errorEnum.getDesc());
+        super(errorEnum.getCode(), errorEnum.getDesc());
     }
 }

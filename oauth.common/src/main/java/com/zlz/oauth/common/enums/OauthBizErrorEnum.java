@@ -12,6 +12,12 @@ import lombok.Getter;
 public enum OauthBizErrorEnum {
 
     NOT_FIND_LOGIN_TYPE(10001001, "未知的登录方式"),
+
+    PWD_ERROR(10001002, "密码错误"),
+
+    SAME_USERNAME_ERROR(10001003, "用户已存在"),
+
+    NO_USER_ERROR(10001003, "用户不存在"),
     ;
 
     private final Integer code;

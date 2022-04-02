@@ -27,6 +27,7 @@
           useGeneratedKeys="true">
     insert into `user`
     <trim prefix="(" suffix=")" suffixOverrides=",">
+        id,
       <if test="username != null">
         username,
       </if>
@@ -68,6 +69,7 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+        id = #{id, jdbcType=BIGINT},
       <if test="username != null">
         #{username,jdbcType=VARCHAR},
       </if>

@@ -1,8 +1,8 @@
 package com.zlz.oauth.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.zlz.oauth.common.dos.user.UserDO;
 import com.zlz.oauth.common.param.UserParam;
-import org.apache.catalina.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,14 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @date 2022-04-01 20:07:13
  */
 @Mapper
-public interface UserMapper {
-
-    /**
-     * 批量创建用户
-     * @param user
-     * @return
-     */
-    int batchInsert(UserDO user);
+public interface UserMapper extends BaseMapper<UserDO> {
 
     /**
      * 创建用户
@@ -38,5 +31,5 @@ public interface UserMapper {
      * @param param
      * @return
      */
-    User selectByParam(UserParam param);
+    UserDO selectByParam(UserParam param);
 }

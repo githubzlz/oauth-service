@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /oauth/
+spring:
+  application:
+    name: oauth-service
+  datasource:
+    url: jdbc:mysql://49.235.229.8:3306/user?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: zhulinzhong
+    password: zhulinzhong
